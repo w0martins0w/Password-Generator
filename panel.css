@@ -1,0 +1,163 @@
+body {
+	margin: 0px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: white;
+	color: black;
+}
+
+.splash-screen {
+	margin: 0px;
+	position: absolute;
+	display: block;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	background-image: url("resources/splash-screen.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	z-index: 9999;
+	animation-name: SplashScreen;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-delay: 500ms;
+}
+
+@keyframes SplashScreen {
+	
+	98% {
+		opacity: 0;
+	}
+
+	100% {
+		display: none;
+	}
+
+}
+
+.extension {
+	margin: 0px;
+	position: static;
+	display: block;
+	border-style: double none;
+	border-color: dodgerblue transparent;
+	border-top-width: 4px;
+	border-bottom-width: 4px;
+	padding: 6px;
+	width: 80%;
+	max-width: 480px;
+	height: auto;
+	background-color: transparent;
+}
+
+.extension > div {
+	margin-bottom: 6px;
+	position: static;
+	display: block;
+	padding: 4px;
+	width: calc(100% - 6px * 2);
+	height: auto;
+	background-color: transparent;
+}
+
+.extension  > div:last-child {
+	margin-bottom: 0px;
+}
+
+.extension > div.option {
+	width: calc(100% - 20px - 6px * 2);
+	border-left-style: solid;
+	border-left-color: dodgerblue;
+	border-width: 20px;
+	background-color: white;
+	box-shadow: #808080 0px 0px 7px 0px;
+}
+
+.extension > div.option[selected] {
+	border-left-color: darkolivegreen;
+}
+
+.extension > div > span {
+	margin: 0px 0px 4px 0px;
+	position: relative;
+	display: block;
+	border: 0px;
+	padding: 0px;
+	width: max-content;
+	height: auto;
+	font-size: 0.95rem;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.extension > div.option[type="template"] > span::after {
+	content: "❓";
+	position: static;
+}
+
+.extension > div.option[type="template"] > span > div.tool-tip {
+	margin: 0px;
+	position: absolute;
+	display: none;
+	border: 0px;
+	padding: 4px;
+	left: 12px;
+	top: calc(0.95rem + 4px);
+	width: max-content;
+	height: auto;
+	z-index: 10;
+	color: white;
+	font-size: 0.75rem;
+	font-family: monospace;
+	font-style: normal;
+	background-color: black;
+}
+
+.extension > div.option[type="template"] > span:hover > div.tool-tip {
+	display: block;
+}
+
+.extension > div > textarea {
+	margin: 0px;
+	position: static;
+	display: block;
+	border: 0px;
+	padding: 4px;
+	outline: 1px solid #808080;
+	resize: vertical;
+	scrollbar-width: none;
+	width: calc(100% - 4px * 2);
+	min-height: 1.0rem;
+	height: auto;
+	font-size: 0.80rem;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.extension > div > button {
+	margin: 0px auto 4px auto;
+	position: static;
+	display: block;
+	border: 0px;
+	padding: 4px 8px;
+	width: calc(100% - 40px - 4px * 2);
+	height: auto;
+	color:white;
+	font-size: 1.0rem;
+	font-style: oblique;
+	font-weight: bold;
+	background-color: dodgerblue;
+}
+
+.extension > div > button:hover {
+	background-color: darkblue;
+}

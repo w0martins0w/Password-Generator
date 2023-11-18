@@ -12,12 +12,12 @@ Create customized password templates to generate highly customized ans secure pa
 
 Use this placeholders to place random characters inside generated passwords.
 
-**%%** - escape sequence</br>
-**%r** - random character from the character set</br>
-**%u** - random uppercase character</br>
-**%l** - random lowercase character</br>
-**%d** - random digit</br>
-**%h** - random hex character</br>
+**%%** - escape sequence<br>
+**%r** - random character from the character set<br>
+**%u** - random uppercase character<br>
+**%l** - random lowercase character<br>
+**%d** - random digit<br>
+**%h** - random hex character<br>
 
 ## Option 2 - [Password Length]:
 

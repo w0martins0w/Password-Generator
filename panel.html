@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8"/>
+		<!-- author and description -->
+		<meta name="author" content="w0martins0w"/>
+		<meta name="description" content="generate strong and secure passwords"/>
+		<!-- sidebar panel title -->
+		<title>Password Generator</title>
+		<!-- stylesheet and generation script -->
+		<link rel="stylesheet" href="panel.css" type="text/css"/>
+		<script src="scripts/passwordString.js"></script>
+		<!-- viewport properties -->
+		<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<div class="splash-screen"></div>
+		<div class="extension">
+			<div class="char-set">
+				<span>Character Set</span>
+				<textarea rows="1" cols="auto" wrap="soft"
+					spellcheck="false"></textarea>
+			</div>
+			<div class="option" type="template">
+				<span>
+					Template
+					<div class="tool-tip">
+						Loading ...
+					</div>
+				</span>
+				<textarea rows="1" cols="auto" wrap="soft"
+					spellcheck="false"></textarea>
+			</div>
+			<div class="option" type="length">
+				<span>Length</span>
+				<textarea rows="1" cols="auto" wrap="soft"
+					spellcheck="false">10</textarea>
+			</div>
+			<div class="generate">
+				<button>Generate</button>
+				<textarea rows="1" cols="auto" wrap="soft"
+					spellcheck="false" readonly></textarea>
+			</div>
+		</div>
+		<script src="panel.js"></script>
+	</body>
+</html>

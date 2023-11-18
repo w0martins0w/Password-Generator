@@ -1,0 +1,10 @@
+Specifier Table (case sensative):
+ %% - escape sequence
+ %r - random "character set" character
+ %u - random upercase letter
+ %l - random lowercase letter
+ %d - random digit
+ %h - random hex character
+
+Example:
+ %d%r%dpassword%d%r%d
