@@ -22,7 +22,12 @@ const option = (function(node = document) {
 		_option[i].addEventListener("click", function(event) {
 
 			event.currentTarget.setAttribute("selected", "");
-			_selected = _option.values().toArray().indexOf(event.currentTarget);
+			for (let i = 0; i < _option.length; i++) {
+				if (_option[i] == event.currentTarget) {
+					_selected = i;
+					break;
+				}
+			}
 
 			for (let i = 0; i < _option.length; i++) {
 				if (i != _selected) {
